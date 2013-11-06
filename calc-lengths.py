@@ -1,4 +1,8 @@
 #! /usr/bin/env python
+"""
+This script calculates the lengths of all sequences in the
+input files and outputs them to stdout.
+"""
 import argparse
 import screed
 import sqer
