@@ -1,6 +1,7 @@
 #! /usr/bin/env python
 """
-This is a docstring telling me what this script does.
+This script calculates the lengths of all sequences in the
+input files and outputs them to stdout.
 """
 import argparse
 import screed
