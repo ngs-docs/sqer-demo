@@ -8,6 +8,6 @@ setup(name="sqer",
       packages=['sqer'],
       install_requires=["screed >= 0.7"],
       setup_requires=["nose >= 1.0"],
-      scripts=["count-reads.py"],
+      scripts=["count-read-bp.py"],
       test_suite = 'nose.collector',
 )

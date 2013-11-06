@@ -10,7 +10,7 @@ datadir = os.path.join(sqerdir, 'data')
 datadir = os.path.normpath(datadir)
 
 def test_count_reads():
-    scriptpath = os.path.join(sqerdir, 'count-reads.py')
+    scriptpath = os.path.join(sqerdir, 'count-read-bp.py')
     datapath = os.path.join(datadir, 'test-reads.fa')
     print thisdir, sqerdir, scriptpath, datapath
 
@@ -23,7 +23,7 @@ def test_count_reads():
     assert "8 bp total" in out, out
 
 def test_count_reads_2():
-    scriptpath = os.path.join(sqerdir, 'count-reads.py')
+    scriptpath = os.path.join(sqerdir, 'count-read-bp.py')
     datapath = os.path.join(datadir, 'test-reads.fq')
     print thisdir, sqerdir, scriptpath, datapath
 
