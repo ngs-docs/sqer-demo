@@ -2,7 +2,7 @@
 Project Details
 ===============
 
-sqer is super awesome.
+sqer is super duper awesome.
 
 Important details
 =================
