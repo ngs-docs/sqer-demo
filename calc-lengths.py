@@ -1,4 +1,7 @@
 #! /usr/bin/env python
+"""
+This is a docstring telling me what this script does.
+"""
 import argparse
 import screed
 import sqer
