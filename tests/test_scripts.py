@@ -6,10 +6,12 @@ thisdir = os.path.normpath(thisdir)
 sqerdir = os.path.join(thisdir, '../')
 sqerdir = os.path.normpath(sqerdir)
 
+datadir = os.path.join(sqerdir, 'data')
+datadir = os.path.normpath(datadir)
 
 def test_count_reads():
     scriptpath = os.path.join(sqerdir, 'count-reads.py')
-    datapath = os.path.join(sqerdir, 'reads.fa')
+    datapath = os.path.join(datadir, 'test-reads.fa')
     print thisdir, sqerdir, scriptpath, datapath
 
     p = subprocess.Popen([scriptpath, datapath],
@@ -22,7 +24,7 @@ def test_count_reads():
 
 def test_count_reads_2():
     scriptpath = os.path.join(sqerdir, 'count-reads.py')
-    datapath = os.path.join(sqerdir, 'test-reads.fq')
+    datapath = os.path.join(datadir, 'test-reads.fq')
     print thisdir, sqerdir, scriptpath, datapath
 
     p = subprocess.Popen([scriptpath, datapath],
