@@ -18,7 +18,7 @@ def test_count_reads():
     (out, err) = p.communicate()
 
     assert p.returncode == 0
-    assert "8 bp total", out
+    assert "8 bp total" in out, out
 
 def test_count_reads_2():
     scriptpath = os.path.join(sqerdir, 'count-reads.py')
@@ -31,4 +31,4 @@ def test_count_reads_2():
     (out, err) = p.communicate()
 
     assert p.returncode == 0
-    assert "8 bp total", out
+    assert "5755 bp total" in out, out
